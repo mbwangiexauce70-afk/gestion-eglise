@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestion Église Lemba</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1e3a8a">
+<style>
+  body { font-family: Arial; background: #f0f2f5; text-align: center; padding: 20px; }
+  h1 { color: #1e3a8a; }
+  button { display: block; width: 100%; padding: 15px; margin: 10px 0; font-size: 18px; border: none; border-radius: 10px; background: #1e3a8a; color: white; }
+  button:active { background: #172e6e; }
+</style>
+</head>
+<body>
+  <h1>Gestion Église Lemba</h1>
+  <p>Bienvenue, choisis une option :</p>
+  <button onclick="alert('Page Membres - à développer')">👥 Membres</button>
+  <button onclick="alert('Page Dîmes - à développer')">💰 Dîmes</button>
+  <button onclick="alert('Page Événements - à développer')">📅 Événements</button>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
+</body>
+</html>
